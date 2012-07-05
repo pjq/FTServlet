@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<servlet>
+		<servlet-name>HomePage</servlet-name>
+		<servlet-class>HomePage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HomePage</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>HelloTomcat</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>getname</servlet-name>
+		<servlet-class>GetName</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getname</servlet-name>
+		<url-pattern>/getname</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>query</servlet-name>
+		<servlet-class>me.pjq.database.QueryDatabase</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>query</servlet-name>
+		<url-pattern>/query</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>AddAccount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TwitterUpdateStatus</servlet-name>
+		<servlet-class>me.pjq.twitter.UpdateStatusImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TwitterUpdateStatus</servlet-name>
+		<url-pattern>/s1/UpdateStatus</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FacebookUpdateStatus</servlet-name>
+		<servlet-class>me.pjq.facebook.UpdateStatusImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FacebookUpdateStatus</servlet-name>
+		<url-pattern>/s2/UpdateStatus</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TwitterGetUserTimeline</servlet-name>
+		<servlet-class>me.pjq.twitter.GetUserTimelineImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TwitterGetUserTimeline</servlet-name>
+		<url-pattern>/s1/GetUserTimeline</url-pattern>
+	</servlet-mapping>
+
+
+	<!--
+		servlet> <servlet-name>OldWebRegister</servlet-name>
+		<servlet-class>me.pjq.account.web.OldRegister</servlet-class>
+		</servlet> <servlet-mapping>
+		<servlet-name>OldWebRegister</servlet-name>
+		<url-pattern>/account/web/OldRegister</url-pattern> </servlet-mapping
+	-->
+
+
+	<servlet>
+		<servlet-name>WebRegister</servlet-name>
+		<servlet-class>me.pjq.account.web.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WebRegister</servlet-name>
+		<url-pattern>/account/web/Register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WebAccountUpdate</servlet-name>
+		<servlet-class>me.pjq.account.web.Update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WebAccountUpdate</servlet-name>
+		<url-pattern>/account/web/Update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UploadPhoto</servlet-name>
+		<servlet-class>me.pjq.photo.UploadPhotoImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadPhoto</servlet-name>
+		<url-pattern>/s3/UploadPhoto</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>GetIp</servlet-name>
+		<servlet-class>me.pjq.openapi.GetIP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIp</servlet-name>
+		<url-pattern>/openapi/getip</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AlipayResponse</servlet-name>
+		<servlet-class>me.pjq.openapi.AlipayResponse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlipayResponse</servlet-name>
+		<url-pattern>/openapi/alipay</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AlipayLog</servlet-name>
+		<servlet-class>me.pjq.openapi.AlipayLog</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlipayLog</servlet-name>
+		<url-pattern>/openapi/alipaylog</url-pattern>
+	</servlet-mapping>
+
+</web-app>
