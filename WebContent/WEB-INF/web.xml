@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
-
-	
+    
+    
+    
+    
 	<servlet>
 		<servlet-name>HomePage</servlet-name>
 		<servlet-class>HomePage</servlet-class>
@@ -9,21 +11,20 @@
 	
 	<servlet-mapping>
 		<servlet-name>HomePage</servlet-name>
-		<url-pattern>/index*</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+	<!--  
+	-->
 	<servlet>
 		<servlet-name>JsServlet</servlet-name>
 		<servlet-class>JsServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>JsServlet</servlet-name>
-		<url-pattern>/js/*.js</url-pattern>
+		<url-pattern>/js</url-pattern>
 	</servlet>
 
-	
-	
-	
 	<servlet>
 		<servlet-name>hello</servlet-name>
 		<servlet-class>HelloTomcat</servlet-class>
