@@ -5,14 +5,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>FTClient Homepage</title>
+
+<script type="text/javascript" src="js/hi.js"></script>
+
+
 </head>
-<body>
+<body >
+
+
+
+
 	<h3>FTClient Web HomePage</h3>
 	<a href=/FTServlet/account/web/Register>Register</a>
 	<br>
 	<a href=/FTServlet/account/web/Update>Update Info</a>
 	<br>
 	<a href=/FTServlet/s1/GetUserTimeline>GetTimeline</a>
+	
+	
+	
+	
 	<br>
 	<br>
 	<a href=http://pjq.me/wiki/doku.php?id=project:ftclient>Click here

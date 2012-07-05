@@ -66,12 +66,14 @@ public class BaseHttpServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         // TODO Auto-generated method stub
-        resp.setContentType("text/html;charset=UTF-8");
+//        resp.setContentType("text/html;charset=UTF-8");
         // Init the common vars.
         out = resp.getWriter();
         mPrintWriter = out;
 
         String request = Utils.readFromInputStream(req.getInputStream());
+        
+        
         mOriginRequestString=request;
         mRequestHashMap = parserPostParameters(request);
         mMachine = mRequestHashMap.get(CommonParamString.PARAM_MACHINE);
