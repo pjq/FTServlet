@@ -107,8 +107,6 @@ public class BaseHttpServlet extends HttpServlet {
         mTwitterUserPassword = removeEnter(mRequestHashMap
                 .get(CommonParamString.PARAM_TWITTER_USER_PASSWORD));
         if (isUserNameOrPasswordEmpty()) {
-            // mUserName = "pjq";
-            // mPassword = "123";
         }
 
         if (null != mUserName) {
@@ -118,7 +116,7 @@ public class BaseHttpServlet extends HttpServlet {
 
     /**
      * Parser the UserName and Password.<br>
-     * username=user&password=123
+     * username=user&password=12345
      * 
      * @param authString
      */
