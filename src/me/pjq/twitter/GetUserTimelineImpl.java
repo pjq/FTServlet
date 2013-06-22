@@ -45,7 +45,7 @@ public class GetUserTimelineImpl extends GetUserTimeline {
 		ResponseList<Status> responseList = null;
 		try {
 			Paging paging = new Paging();
-			paging.setCount(200);
+			paging.setCount(100);
 			Twitter twitter = createTwitterInstance();
 			responseList = twitter.getHomeTimeline(paging);
 			// responseList = createTwitterInstance().getHomeTimeline();
