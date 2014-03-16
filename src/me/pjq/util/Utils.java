@@ -19,6 +19,8 @@ import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import twitter4j.conf.ConfigurationBuilder;
+
 public class Utils {
 	/**
 	 * Read data from InputStreamReader
@@ -231,5 +233,15 @@ public class Utils {
 		char c1 = hexDigits[bt & 0xf];
 		stringbuffer.append(c0);
 		stringbuffer.append(c1);
+	}
+	
+	public static ConfigurationBuilder setSSLForTwitter(ConfigurationBuilder cb){
+		cb.setOAuthAuthenticationURL("https://api.twitter.com/oauth/request_token");
+		cb.setOAuthAccessTokenURL("https://api.twitter.com/oauth/access_token");
+		cb.setOAuthAuthorizationURL("https://api.twitter.com/oauth/authorize");
+		cb.setOAuthRequestTokenURL("https://api.twitter.com/oauth/request_token");
+		cb.setRestBaseURL("https://api.twitter.com/1.1/");
+		
+		return cb;
 	}
 }

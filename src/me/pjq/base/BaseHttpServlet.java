@@ -259,6 +259,7 @@ public class BaseHttpServlet extends HttpServlet {
                 .setOAuthAccessTokenSecret(
                         mAccountInfo.getTwitterAccessTokenSecret());
         cb.setRestBaseURL("http://api.twitter.com/1.1/");
+        cb = Utils.setSSLForTwitter(cb);
         TwitterFactory tf = new TwitterFactory(cb.build());
         Twitter twitter = tf.getInstance();
         return twitter;

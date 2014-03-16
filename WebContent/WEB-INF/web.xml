@@ -137,6 +137,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>GetPM25</servlet-name>
+		<servlet-class>me.pjq.openapi.GetPM25</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetPM25</servlet-name>
+		<url-pattern>/openapi/getpm25</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>AlipayResponse</servlet-name>
 		<servlet-class>me.pjq.openapi.AlipayResponse</servlet-class>
 	</servlet>

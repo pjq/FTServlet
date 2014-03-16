@@ -48,14 +48,22 @@ public class UpdateStatusImpl extends UpdateStatus {
 	 */
 	private Status updateStatus(PrintWriter out, String message,
 			AccountInfo accountInfo) {
-		ConfigurationBuilder cb = new ConfigurationBuilder();
-		cb.setDebugEnabled(true).setOAuthConsumerKey(
-				accountInfo.getTwitterConsumerKey()).setOAuthConsumerSecret(
-				accountInfo.getTwitterConsumerSecret()).setOAuthAccessToken(
-				accountInfo.getTwitterAccessToken()).setOAuthAccessTokenSecret(
-				accountInfo.getTwitterAccessTokenSecret());
-		TwitterFactory tf = new TwitterFactory(cb.build());
-		Twitter twitter = tf.getInstance();
+//		ConfigurationBuilder cb = new ConfigurationBuilder();
+//		cb.setDebugEnabled(true).setOAuthConsumerKey(
+//				accountInfo.getTwitterConsumerKey()).setOAuthConsumerSecret(
+//				accountInfo.getTwitterConsumerSecret()).setOAuthAccessToken(
+//				accountInfo.getTwitterAccessToken()).setOAuthAccessTokenSecret(
+//				accountInfo.getTwitterAccessTokenSecret());
+//		cb = Utils.setSSLForTwitter(cb);
+//		cb.setOAuthAuthenticationURL("https://api.twitter.com/oauth/request_token");
+//		cb.setOAuthAccessTokenURL("https://api.twitter.com/oauth/access_token");
+//		cb.setOAuthAuthorizationURL("https://api.twitter.com/oauth/authorize");
+//		cb.setOAuthRequestTokenURL("https://api.twitter.com/oauth/request_token");
+//		cb.setRestBaseURL("https://api.twitter.com/1.1/");
+	
+//		TwitterFactory tf = new TwitterFactory(cb.build());
+//		Twitter twitter = tf.getInstance();
+		Twitter twitter = createTwitterInstance();
 
 		Status status = null;
 		try {

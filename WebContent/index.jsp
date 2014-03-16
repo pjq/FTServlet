@@ -38,6 +38,12 @@
 	<br>
 	<a href=https://github.com/pjq/FTServlet>Servlet Server</a>
 	<br>
+	<h4>Open API</h4>
+	
+	<a href="/FTServlet/openapi/getip?domain=pjq.me">Resolve ip address</a>
+	<br>
+	<a href="/FTServlet/openapi/getpm25?city=shanghai">Get PM 2.5</a>
+	<br>
 
 </body>
 </html>
