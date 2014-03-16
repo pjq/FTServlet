@@ -15,7 +15,6 @@
 	</servlet-mapping>
 	
 	<!--  
-	-->
 	<servlet>
 		<servlet-name>JsServlet</servlet-name>
 		<servlet-class>JsServlet</servlet-class>
@@ -24,6 +23,7 @@
 		<servlet-name>JsServlet</servlet-name>
 		<url-pattern>/js</url-pattern>
 	</servlet>
+	-->
 
 	<servlet>
 		<servlet-name>hello</servlet-name>
